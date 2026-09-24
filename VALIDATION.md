@@ -4,7 +4,8 @@ Module 10 of `BUILD_SPEC.md`. Target: [sororail-contracts](https://github.com/So
 (local checkout at the time of this exercise: `/home/emmanuel/sororail`,
 branch `sororail-contracts`), a real, unreleased Soroban contract suite —
 `batch_payout`, `escrow`, `stream`, `vesting`, `recurring`, plus a shared
-`common` crate — on the same soroban-sdk 27.0.6 this crate targets.
+`common` crate — on the same soroban-sdk 27.0.6 this crate targets (see
+[`COMPATIBILITY.md`](COMPATIBILITY.md) for the SDK/protocol matrix).
 
 This was a time-boxed pass, not an exhaustive one: it goes deep on one
 contract (`vesting`) rather than shallow across all six. That scope
@@ -154,3 +155,9 @@ else needed checking":
 - The `vesting` test rewrite exists only in the local sororail checkout,
   uncommitted there — this repository has no ability to modify or
   publish to sororail-contracts, and wasn't asked to.
+add validation coverage for the recurring contract
+add validation coverage for the batch payout auth model
+
+add a line-count and coverage comparison to validation
+
+add benchmark tracking for TestEnv construction
